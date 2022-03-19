@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Microsoft SQL Server - flask_test@localhost" uuid="60ff3b3d-d8c3-4dfa-95c9-cc391609ce1c">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://localhost:3306;database=flask_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="mysql://root:1314@localhost:3306/flask_test" uuid="ecdba7f5-9e2c-4424-b332-69aa5ed3bf07">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>mysql://root:1314@localhost:3306/flask_test</jdbc-url>
+    </data-source>
+  </component>
+</project>

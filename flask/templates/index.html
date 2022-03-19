@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{#    <p>name = {{name}}</p>#}
+{#    <p>age = {{age}}</p>#}
+{#    <p>dict city= {{ dict["city"] }}</p>#}
+{#    <p>dict city= {{ dict.city }}</p>#}
+{#    <p>list : {{ list }}</p>#}
+{#    <p>list[int]: {{ list[int] }}</p>#}
+{#    <p>list[1]+list[2]: {{ list[1]+list[2] }}</p>#}
+{#    <p>{{ '<em>hello</em>' | safe }}</p>#}
+{#    <p>{{ 'olleh' | reverse }}</p>#}
+{#    <p>{{ [6,2,3,1,5,4] | sort }}</p>#}
+
+    <form method="post">
+        #设置csrf_token
+        {{ form.csrf_token() }}
+        {{ form.us.label }}
+        <p>{{ form.us }}</p>
+        {{ form.ps.label }}
+        <p>{{ form.ps }}</p>
+        {{ form.ps2.label }}
+        <p>{{ form.ps2 }}</p>
+        <p>{{ form.submit() }}</p>
+        {% for x in get_flashed_messages() %}
+            {{ x }}
+        {% endfor %}
+ </form>
+</body>
+</html>
